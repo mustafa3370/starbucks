@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body >
+    <section  class="hero" >
+        <header>
+            <nav data-aos="fade-right" >
+                <div class="logo">
+                    <span class="dot"></span>
+                    Star<br/>
+                    bucks
+                    <span class="dot"></span>
+               </div>
+               <input type="checkbox" id="check">
+               <label for="check" class="menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </label>
+            <div  class="nav-links" >
+                <a href="#" class="active">Our Prodect</a>
+                <a href="#" >Coffe</a>
+                <a href="#" >Sandwich</a>
+                <a href="#" >dessert</a>
+                <a href="#" >About</a>
+                <a href="#" >Talk to us</a>
+            </div>
+        </nav>
+        </header>
+        <!--intro-->
+        
+        <div class="intro" data-aos="fade-up-right">
+            <div>
+                <h1>Our Drink Is</h1>
+                <h2>A Never Ending Story</h2>
+            </div>
+            <div>
+                <button>See Nearest Location</button>
+            </div>
+        </div>
+            <div class="hero-bg" >
+                <img src="./Images/images/pngfind.com-frappuccino-png-1893420.png " width="300px" alt="coffe" >
+            </div>
+            <div class="scroll">
+                <a href="#drinks">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                      </svg>
+                      <span>Scroll Down to <br/> See More</span>
+                </a>
+            </div>
+    </section>
+
+    <section class="drinks " id="drinks"  >
+        <h3>our Product </h3>
+        <div class="line-1"> </div>
+        <div class="line-2"> </div>
+        <div  id="buttons">
+            <button class="btn">All</button>
+            <button class="btn">cold-drink</button>
+            <button class="btn">Hot-drink</button>
+            <button class="btn">sandwich</button>
+            <button class="btn">dessert</button>
+        </div>
+        <div id="products"></div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:1800});
+  </script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

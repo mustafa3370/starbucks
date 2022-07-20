@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "josefin Sans", sans-serif;
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+#check,.menu{
+    display: none;
+}
+:root{
+    --green:#026144;
+    --black:#333030;
+    --white:#eee;
+    --red:#e92424;
+}
+body{
+    width: 1357px;
+}
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    color:var(--white);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 80%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.logo .dot{
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background: var(--black);
+    margin: 0.2rem;
+}
+.nav-links{
+  display: flex;
+}
+.nav-links a{
+text-decoration: none;
+margin-right: 1rem;
+color: rgb(117 167 136);
+}
+.nav-links a:last-child{
+    margin: 0rem;
+}
+a:hover{
+    color: var(--white);
+}
+.nav-links .active{
+    color: var(--white);
+}
+.nav-links a::after{
+    content: "";
+     display: block;
+     height: 3px;
+     background: var(--white);
+     width: 0%;
+    transition: all ease-in-out 300ms;
+}
+.nav-links a:hover::after{
+width: 100%;
+}
+/*scroll bar */
+::-webkit-scrollbar{
+    width: 9px;
+}
+::-webkit-scrollbar-thumb{
+    background: honeydew;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background:green;
+    
+}
+/*Hero section*/
+.hero{
+    background:var(--green);
+    padding: 5rem 10% 0rem 10%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+.hero-bg{
+    background: var(--black);
+    width: 65rem;
+   height: 37rem;
+   border-radius: 20rem;
+   transform: rotate(-45deg);
+   right: -15.3rem;
+   top: -12rem;
+   position: absolute;
+   z-index: 0;
+}
+.hero-bg img{
+    transform: rotate(45deg);
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+.hero .intro{
+    margin-bottom: 7rem;
+    z-index: 1;
+    position: absolute;
+}
+.hero .intro h1{
+    font-size: 70px;
+    margin-left: 7rem;
+}
+.hero .intro h2{
+    margin: 1rem 8rem;
+    font-size: 30px ;
+}
+.hero .intro button{
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border-radius: 10px 0px;
+    box-shadow: 9px 3px 9px 4px rgb(53 13 0);
+     
+}
+.scroll{
+    position: absolute;
+    bottom: 2rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+.scroll a{
+    color: #0c0b0b;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.scroll a:hover{
+    color: var(--white);
+     
+}
+.drinks h3{ 
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+}
+.line-1{
+    position: relative;
+   width: 472px;
+   height: 3px;
+   left: 50px;
+   bottom: 28px;
+   background: var(--black);
+   
+}
+.line-2{
+    position: relative;
+   width: 472px;
+   height: 3px;
+   left:  847px;
+   bottom: 28px;
+   background: var(--black);
+   
+}
+/*drinks*/
+.drinks{
+    height: 200vh;
+}
+#buttons .btn{
+    position: relative;
+    left: 250px;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem 1rem;
+    border-radius: 10px 0px;
+    box-shadow: 9px 3px 11px -1px rgb(0 25 0);
+}
+#products{
+display: grid;
+grid-template-columns: auto auto auto;
+grid-column-gap: 1.5rem;
+padding: 2rem;
+}
+.card{
+    background-color: #1f3933;
+    max-width: 50em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 2em;
+}
+.image-container{
+text-align: center;
+
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+   
+}
+.product-name {
+    color: var(--white);
+}
+.price{
+    color: var(--white);
+}
