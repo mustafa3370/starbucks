@@ -24,12 +24,12 @@
               </svg>
             </label>
             <div  class="nav-links" >
-                <a href="#" class="active">Our Prodect</a>
-                <a href="#" >Coffe</a>
-                <a href="#" >Sandwich</a>
-                <a href="#" >dessert</a>
-                <a href="#" >About</a>
-                <a href="#" >Talk to us</a>
+                <a href="#" class="active" onclick="filterproduct('all')">Our Prodect</a>
+                <a href="#"onclick="filterproduct('Coffe')" >Coffe</a>
+                <a href="#" onclick="filterproduct('Sandwich')">Sandwich</a>
+                <a href="#"  onclick="filterproduct('dessert')">dessert</a>
+                <a href="#" onclick="filterproduct('About')" >About</a>
+                <a href="#"onclick="filterproduct('Talk to us')" >Talk to us</a>
             </div>
         </nav>
         </header>
@@ -62,13 +62,13 @@
         <div class="line-1"> </div>
         <div class="line-2"> </div>
         <div  id="buttons">
-            <button class="btn">All</button>
-            <button class="btn">cold-drink</button>
-            <button class="btn">Hot-drink</button>
-            <button class="btn">sandwich</button>
-            <button class="btn">dessert</button>
+            <button class="btn" onclick="filterproduct('all')">All</button>
+            <button class="btn" onclick="filterproduct('cold-drink')">cold-drink</button>
+            <button class="btn" onclick="filterproduct('Hot-drink')">Hot-drink</button>
+            <button class="btn" onclick="filterproduct('sandwich')">sandwich</button>
+            <button class="btn"onclick="filterproduct('dessert')" >dessert</button>
         </div>
-        <div id="products"></div>
+        <div id="products" data-aos="zoom-in-right"></div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

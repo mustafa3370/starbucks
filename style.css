@@ -218,6 +218,14 @@ img{
 .product-name {
     color: var(--white);
 }
-.price{
-    color: var(--white);
+
+.container{
+    padding-top: 1em;
+    color: rgb(255, 255, 255);
+}
+.container h5{
+    font-weight: 500;
+}
+.hide{
+    display: none;
 }
